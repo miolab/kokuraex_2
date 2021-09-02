@@ -1,5 +1,7 @@
 FROM elixir:1.12.2-slim
 
+WORKDIR /usr/src/app
+
 RUN apt-get update -y && \
   apt-get upgrade -y && \
   apt-get install -y \
@@ -19,17 +21,15 @@ RUN apt-get purge -y nodejs npm
 
 RUN apt-get clean
 
-WORKDIR /app
-
 RUN mix local.hex --force && \
   mix local.rebar --force
 
-COPY ./mix.exs /app/
-COPY ./mix.lock /app/
+# COPY ./mix.exs /app/
+# COPY ./mix.lock /app/
 
-RUN mix archive.install hex phx_new 1.5.12 --force && \
-  mix deps.compile
+RUN mix archive.install hex phx_new 1.5.12 --force
+# RUN mix deps.compile
 
-RUN mix phx.digest
+# RUN mix phx.digest
 
-CMD [ "mix", "phx.server", "--no-halt" ]
+# CMD [ "mix", "phx.server", "--no-halt" ]
