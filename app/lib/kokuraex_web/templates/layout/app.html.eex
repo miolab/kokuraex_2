@@ -19,8 +19,9 @@
             <% end %>
           </ul>
         </nav>
+        <!-- TODO: ヘッダーアイコンをクリックで /home へ遷移させる -->
         <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/img_header.png") %>" alt="Phoenix Framework Logo"/>
+          <img src="<%= Routes.static_path(@conn, "/images/img_header.png") %>" alt="Kokura.ex Logo"/>
         </a>
       </section>
     </header>
