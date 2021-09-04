@@ -23,10 +23,13 @@
           <p style="margin: auto 2px 0;">Events</p>
         </div>
 
-        <!-- TODO: アイコンをクリックでページ遷移設定（#kokuraex、#kokura-ex Slack） -->
         <div style="display: flex; align-items: flex-end; margin: 2rem 1rem;">
-          <img src="<%= Routes.static_path(@conn, "/images/img_twitter.jpg") %>" alt="Kokura.ex Logo"/ style="width: 65px; height: 65px;">
-          <img src="<%= Routes.static_path(@conn, "/images/img_slack.png") %>" alt="Kokura.ex Logo"/ style="width: 65px; height: 65px;">
+          <a href="https://twitter.com/search?q=%23kokuraex">
+            <img src="<%= Routes.static_path(@conn, "/images/img_twitter.jpg") %>" alt="twitter: #kokuraex" style="width: 80px;">
+          </a>
+          <a href="https://elixirjp.slack.com/archives/CPMB7CFPZ">
+            <img src="<%= Routes.static_path(@conn, "/images/img_slack.png") %>" alt="Kokura.ex Logo" style="width: 80px;">
+          </a>
         </div>
       </div>
     </header>
