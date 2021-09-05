@@ -8,6 +8,6 @@ defmodule KokuraexWeb.PageControllerTest do
 
   test "GET /about", %{conn: conn} do
     conn = get(conn, "/about")
-    assert html_response(conn, 200) =~ "test About"
+    assert html_response(conn, 200) =~ "About"
   end
 end
