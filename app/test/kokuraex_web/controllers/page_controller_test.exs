@@ -11,8 +11,8 @@ defmodule KokuraexWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "About"
   end
 
-  test "GET /events", %{conn: conn} do
-    conn = get(conn, "/events")
-    assert html_response(conn, 200) =~ "Events"
+  test "GET /event", %{conn: conn} do
+    conn = get(conn, "/event")
+    assert html_response(conn, 200) =~ "Event"
   end
 end
