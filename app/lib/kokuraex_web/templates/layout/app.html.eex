@@ -11,15 +11,18 @@
   <body>
     <header>
       <div style="display: flex; justify-content: space-between; align-items: flex-end;">
-        <!-- TODO: ヘッダーアイコンをクリックで /home へ遷移させる -->
-        <a href="https://phoenixframework.org/" class="phx-logo">
+        <a href="<%= Routes.page_path(@conn, :index) %>" class="phx-logo">
           <img src="<%= Routes.static_path(@conn, "/images/img_header.png") %>" alt="Kokura.ex Logo"/>
         </a>
 
         <!-- TODO: ルーティング設定 -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
-          <p style="margin: auto 2px 0;">Home</p>
-          <p style="margin: auto 2px 0;">About</p>
+          <p style="margin: auto 2px 0;">
+            <%= link "Home", to: Routes.page_path(@conn, :index) %>
+          </p>
+          <p style="margin: auto 2px 0;">
+            <%= link "About", to: Routes.about_path(@conn, :index) %>
+          </p>
           <p style="margin: auto 2px 0;">Events</p>
         </div>
 
