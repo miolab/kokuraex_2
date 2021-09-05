@@ -1,1 +1,22 @@
-<h1>About</h1>
+<div>
+  <h1 style="text-align: center;">About</h1>
+  <div>
+    <div style="text-align: center;">
+      <img
+        src="<%= Routes.static_path(@conn, "/images/img_kokuraex_icon.png") %>"
+        alt="kokura.ex Logo"
+        style="width: 30%;"
+      >
+    </div>
+    <div>
+      <p>
+        <strong>kokura.ex</strong>は、「高速処理性能」と「高い開発効率性」を両立できるプログラミング言語<strong>Elixir</strong>と、そのWebアプリケーションフレームワーク<strong>Phoenix</strong>を北九州で広め、ワイワイと盛り上げていくコミュニティです。<br>
+        これから北九州で先端技術をやりたい方や、最新のプログラミングを学びたい方、未来に向けてITに強くなりたい方など、技術への興味レベルが高い方や、プログラミングに関心が高い方のご参加を歓迎します。
+      </p>
+      <small>
+        kokura.ex is a community that promotes the Elixir programming language and its web application framework, Phoenix, in Kitakyushu, where both "high-speed processing performance" and "high development efficiency" can be achieved.<br>
+        We welcome people with a high level of interest in technology and programming, such as those who want to work with cutting-edge technology in Kitakyushu, those who want to learn the latest programming, and those who want to be strong in IT for the future.
+      </small>
+    </div>
+  </div>
+</div>
