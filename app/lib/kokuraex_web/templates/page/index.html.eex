@@ -1,4 +1,12 @@
 <div class="mb-20">
+  <h1
+    class="
+      text-center
+      text-gray-500
+      font-midium
+      text-2xl
+    "
+  >kokura.exは開発言語Elixirをわいわいと盛り上げていく技術コミュニティです</h1>
   <figure class="
     mb-12
   ">
