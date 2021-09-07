@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
-  <body class="text-gray-700">
+  <body class="text-gray-700 bg-gray-100">
     <header>
       <div style="display: flex; justify-content: space-between; align-items: flex-end;">
         <a href="<%= Routes.page_path(@conn, :index) %>" class="phx-logo">
           <img src="<%= Routes.static_path(@conn, "/images/img_header.png") %>" alt="Kokura.ex Logo"/>
         </a>
+
+        <!-- TODO: メニューにスタイル適用-->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
           <p style="margin: auto 2px 0;">
             <%= link "Home", to: Routes.page_path(@conn, :index) %>
@@ -28,7 +30,14 @@
         </div>
         <div style="display: flex; align-items: flex-end; margin: 2rem 1rem;">
           <a href="https://twitter.com/search?q=%23kokuraex">
-            <img src="<%= Routes.static_path(@conn, "/images/img_twitter.jpg") %>" alt="twitter: #kokuraex" style="width: 80px;">
+            <img
+              src="<%= Routes.static_path(@conn, "/images/img_twitter.jpg") %>"
+              alt="twitter: #kokuraex"
+              style="width: 80px;"
+              class="
+                rounded-3xl
+              "
+            >
           </a>
           <a href="https://elixirjp.slack.com/archives/CPMB7CFPZ">
             <img src="<%= Routes.static_path(@conn, "/images/img_slack.png") %>" alt="Kokura.ex Logo" style="width: 80px;">
